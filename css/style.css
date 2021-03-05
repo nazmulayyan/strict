@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 1114px;
+    margin: 0 auto;
+}
+/*======================Navbar css part goes here==========================*/
+nav{
+    background-color: #f6f9f9;
+}
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 214px;
+}
+.logo img{
+    padding-top: 31px;
+}
+.menu{
+    width: 900px;
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    padding-left: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+    text-transform: capitalize;
+    line-height: 100px;
+}
+/*======================Navbar css part end here==========================*/
+/*======================banner css part goes here==========================*/
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 185px;
+    
+}
+.banner-text h1::after{
+    position: absolute;
+    content: '';
+    width: 602px;
+    height: 2px;
+    background-color: #15a4fa;
+    top: 68%;
+    left: 28%;
+}
+.banner-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 44px;
+    padding-bottom: 78px;
+}
+.banner-button{
+    padding-bottom: 190px;
+}
+.banner-button a{
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    padding: 21px 33px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+.banner-icon i{
+    padding-bottom: 92px;
+    font-size: 20px;
+    color: #ffffff;
+}
+/*======================banner css part end here==========================*/
+/*======================intro css part goes here==========================*/
+#intro{
+    background-color: #f6f9f9;
+    padding-top: 70px;
+    padding-bottom: 110px;
+}
+.intro h3{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2d3950;
+    padding-bottom: 21px;
+}
+.intro p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999999;
+    padding: 0 5px;
+}
+/*======================intro css part end here==========================*/
+/*======================service css part goes here==========================*/
+#service{
+    padding-top: 62px;
+    padding-bottom: 64px;
+}
+.service-main{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    text-align: center;
+    width: 300px;
+}
+.service-item i{
+    font-size: 50px;
+    color: #ffffff;
+    background-color: #48baff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+.service-item h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2d3950;
+    padding-top: 27px;
+    padding-bottom: 17px;
+}
+.service-item p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    
+}
+/*======================service css part end here==========================*/
+/*======================gallrey css part goes here==========================*/
+#gallrey{
+    padding-top: 71px;
+    padding-bottom: 97px;
+    background-color: #f6f9f9;
+}
+.gallrey-intro h3{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: #2d3950;
+    padding-bottom: 21px;
+}
+.gallrey-intro p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #909090;
+    padding: 0 5px;
+}
+.gallrey-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+.gallrey-item{
+    width: 360px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.gallrey-overlay{
+    position: absolute;
+    background-color: rgba(21, 164, 250,.90);
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: all linear .5s;
+    opacity: 0;
+}
+.gallrey-overlay:hover{
+    opacity: 1;
+}
+.gallrey-overlay .gallrey-icon{
+    align-self: center;
+}
+.gallrey-icon i{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 42px;
+    margin-left: 4px;
+    transition: all linear .5s;
+}
+.gallrey-icon i:hover{
+    background-color: #15a4fa;
+}
+/*======================gallrey css part end here==========================*/
+/*======================footer css part goes here==========================*/
+
+.footer-img{
+    position: relative;
+}
+.footer-overlay{
+    position: absolute;
+    background-color: rgba(45, 57, 80,.90);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.footer-main{
+    width: 557px;
+    margin: 0 auto;
+}
+.footer-intro{
+    text-align: center;
+}
+.footer-intro h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: #ffffff;
+    padding-top: 62px;
+    padding-bottom: 13px;
+
+}
+.footer-intro p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    padding-bottom: 22px; /*here need pb-52px*/
+}
+.footer-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-form input{
+    width: 100%;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#name{
+    padding: 19px 0 21px 22px;
+    background-color: transparent ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    text-transform: capitalize;
+}
+.footer-form textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    outline: none;
+}
+#message{
+    padding: 19px 0 100px 22px;
+    background-color: transparent ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    text-transform: capitalize;
+}
+.button{
+    padding-top: 43px;
+    padding-bottom: 115px;
+}
+.button a{
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    padding: 9px 48px 9px 48px ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+/*======================footer css part end here==========================*/
+/*======================copyright css part goes here==========================*/
+#copyright-bg{
+    background-color: #f6f9f9;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright-text p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
+    line-height: 90px;
+}
+.copyright-icon{
+    text-align: center;
+    line-height: 90px;
+}
+.copyright-icon i{
+    width: 40px;
+    height: 40px;
+    background-color: #15a4fa;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 40px;
+}
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
+/*======================Navbar css part goes here==========================*/
+
+/*======================Navbar css part end here==========================*/
